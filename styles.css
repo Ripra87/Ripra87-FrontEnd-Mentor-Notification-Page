@@ -1,0 +1,160 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14.5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    padding: 0 1rem;
+    max-width: 650px;
+    
+}
+
+    .header{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+        h1{
+            font-size: 1.3rem;
+            
+        
+        }
+
+            .number{
+                background-color: hsl(223, 77%, 27%);
+                color: white;
+                font-size: 1.1rem;
+                padding: 2px 10px;
+                border-radius: 5px;
+            }
+
+        h2{
+            font-size: 0.9rem;
+            padding-top: 0.5rem;
+            font-weight: 50;
+            color: hsl(219, 12%, 42%);
+        
+            
+        }
+
+        .comment {
+   
+            margin: 0.7rem auto 0 auto;
+            border-radius: 10px;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .unread{
+            background-color: hsl(210, 60%, 98%);
+        }
+
+        .unreadSign{
+            margin-left: 4px;
+            width: 2px;
+            height: 2px;
+            display:inline-block;
+            border: solid red;
+            opacity: 50%;
+            background-color: red;
+            border-radius: 100%;
+        }
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                margin-bottom: 10px;
+                
+                
+            }
+
+            .yourPicture{
+                cursor: pointer;
+            }
+
+            .textComment{
+                display:flex;
+                flex-direction: column;
+                width: 100%;
+                margin-left: 10px;
+                
+            }
+
+                p{
+                    margin: 0 0;
+                    color:hsl(219, 12%, 42%);
+                    text-align: left;
+                }
+
+                .time{
+                    color: hsl(219, 14%, 63%);
+                }
+
+                    .user{
+                        font-weight: bold;
+                        color:black;
+                    }
+
+                    .post{
+                        color: hsl(219, 12%, 42%);
+                        font-weight: bold;
+                    }
+
+                    .group{
+                        color: hsl(219, 85%, 26%);
+                        font-weight: bold;
+                    
+            }
+
+        .replyContent{
+            display: flex;
+            justify-content: right;
+            margin-top: 0;
+        }
+            .reply{
+                border: solid hsl(211, 68%, 94%);
+                border-width: 1.5px;
+                border-radius: 5px;
+                width: 86%;
+                margin-top: 0;
+                padding:10px;
+                
+                
+            }            
+            
+
+/**************ACTIVE STATE*************/
+
+h2:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.user:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.group:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.post:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.reply:hover{
+    background-color:hsl(225, 18%, 87%);;
+    cursor: pointer;
+}
